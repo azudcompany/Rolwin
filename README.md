@@ -1,16 +1,16 @@
 # Rolwin Riegos — rediseño (vista previa)
 
 Página única estática para mostrar la propuesta de rediseño de la web de Rolwin Riegos (Luján de Cuyo, Mendoza).
-No necesita compilación: `index.html` + `media/` + `video/`.
+No necesita compilación: todo está en `public/` (`index.html`, `media/`, `video/`).
 
-## Publicar en Cloudflare Pages
+## Publicar en Cloudflare
 
-1. Cloudflare → Workers & Pages → Create → Pages → Connect to Git → elegir este repositorio.
-2. Framework preset: **None**. Build command: *(vacío)*. Build output directory: **/**.
-3. Deploy. Cada push a `main` vuelve a publicar.
+El proyecto está conectado como **Worker con archivos estáticos** (Workers Builds): cada push a `main` se publica solo.
+`wrangler.jsonc` le indica a Cloudflare que sirva la carpeta `public/` (no hace falta comando de compilación;
+el comando de publicación es el predeterminado, `npx wrangler deploy`).
 
 La vista previa está marcada `noindex` (no aparece en Google). Para publicarla como web definitiva hay que sacar
-la línea `noindex` de `index.html` y de `_headers`.
+la línea `noindex` de `public/index.html` y de `public/_headers`.
 
 ## Contenido
 

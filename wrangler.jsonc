@@ -1,0 +1,9 @@
+{
+  // Sitio estático servido por Cloudflare Workers (archivos de la carpeta public/)
+  "name": "rolwin",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}
