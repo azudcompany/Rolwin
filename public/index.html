@@ -285,25 +285,33 @@ html:not(.js) .loader{display:none}
 /* ==========================================================================
    8) Pie / contacto
    ========================================================================== */
-.ft{margin-top:.75rem;padding:4.5rem 1.5rem 2rem;background:var(--deep);color:#fff;border-radius:var(--r-lg);text-align:center}
-@media (min-width:640px){.ft{padding:5.5rem 2.5rem 2.25rem}}
-.ft__cta{display:flex;flex-direction:column;align-items:center;padding-bottom:4rem;border-bottom:1px solid rgb(255 255 255/.15)}
-.ft__big{margin-top:1.25rem;font-size:2.8rem;font-weight:500;line-height:.92;letter-spacing:-.03em}
-@media (min-width:640px){.ft__big{font-size:4.5rem}}
-.ft__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2.25rem}
-.ft__mid{display:flex;flex-direction:column;align-items:center;padding:3.75rem 0 3.25rem}
-.ft__logo{width:11rem}
-.ft__blurb{margin-top:1rem;max-width:26rem;font-size:.9rem;line-height:1.6;color:rgb(255 255 255/.68)}
-.ft__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem 2rem;margin-top:2.25rem;font-size:.9rem;color:rgb(255 255 255/.85)}
-.ft__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:.3em}
-.ft__socs{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2.25rem}
-.ft__soc{display:grid;place-items:center;width:2.9rem;height:2.9rem;border-radius:var(--r-pill);border:1px solid rgb(255 255 255/.22);color:#fff;transition:background-color .25s,border-color .25s,color .25s,transform .25s var(--e-expo)}
-.ft__soc svg{width:1.2rem;height:1.2rem}
-.ft__soc:hover{background:#fff;border-color:#fff;color:var(--deep);transform:translateY(-2px)}
-.ft__addr{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.75rem;margin-top:2.25rem;font-style:normal;font-size:.85rem;color:rgb(255 255 255/.78)}
-.ft__addr a:hover{color:#fff;text-decoration:underline;text-underline-offset:.25em}
-.ft__addr span{color:rgb(255 255 255/.58)}
-.ft__bar{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding-top:1.75rem;border-top:1px solid rgb(255 255 255/.15);font-size:.75rem;color:rgb(255 255 255/.55)}
+.ft{margin-top:.75rem;padding:3.5rem 1.5rem 1.75rem;background:var(--deep);color:#fff;border-radius:var(--r-lg);border:1px solid rgb(255 255 255/.08);overflow:hidden}
+@media (min-width:640px){.ft{padding:4rem 2.5rem 2rem}}
+.ft__top{display:grid;gap:2.75rem}
+@media (min-width:640px){.ft__top{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.ft__top{grid-template-columns:1.25fr 1fr 1fr 1fr;gap:2.5rem}}
+.ft__logo{width:9rem}
+.ft__blurb{margin-top:1.25rem;max-width:21rem;font-size:1rem;line-height:1.55;color:#fff}
+.ft__socs{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.ft__soc{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:.6rem;border:1px solid rgb(255 255 255/.22);color:#fff;transition:background-color .25s,border-color .25s,color .25s}
+.ft__soc svg{width:1.1rem;height:1.1rem}
+.ft__soc:hover{background:#fff;border-color:#fff;color:var(--deep)}
+.ft__col{border-top:1px solid rgb(255 255 255/.18);padding-top:1.5rem}
+@media (min-width:1024px){.ft__col{margin-top:-.25rem}}
+.ft__col h3{font-size:1.05rem;font-weight:600}
+.ft__col ul{margin-top:.9rem;display:grid;gap:.55rem;font-size:.9rem;color:rgb(255 255 255/.78)}
+.ft__col address{font-style:normal}
+.ft__col a:hover,.ft__col button:hover{color:#fff;text-decoration:underline;text-underline-offset:.25em}
+.ft__muted{color:rgb(255 255 255/.55)}
+.ft__tag{display:inline-block;margin-left:.35rem;padding:.2rem .5rem;border-radius:var(--r-pill);background:rgb(0 168 232/.18);color:#bfeaff;font-size:.6rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;vertical-align:.1em}
+/* Marca gigante: sólo el contorno, se desvanece hacia abajo y la corta la línea del pie */
+.ft__mark{margin-top:3rem;height:calc(var(--fw) * .68);overflow:hidden;--fw:18.5vw;border-bottom:1px solid rgb(255 255 255/.15)}
+@media (min-width:640px){.ft__mark{margin-top:4.5rem;--fw:18.5vw}}
+.ft__word{display:flex;justify-content:space-between;font-size:var(--fw);font-weight:600;line-height:.9;letter-spacing:0;color:transparent;-webkit-text-stroke:1.5px rgb(255 255 255/.6);-webkit-mask-image:linear-gradient(180deg,#000 15%,transparent 82%);mask-image:linear-gradient(180deg,#000 15%,transparent 82%);user-select:none}
+.ft__word i{font-style:normal;transition:-webkit-text-stroke-color .5s}
+.ft:hover .ft__word i{-webkit-text-stroke-color:rgb(127 214 247/.75)}
+.ft__bar{display:flex;flex-direction:column;gap:.5rem;padding-top:1.5rem;font-size:.8rem;color:rgb(255 255 255/.6)}
+@media (min-width:640px){.ft__bar{flex-direction:row;justify-content:space-between}}
 
 /* — Barra fija después del inicio — */
 .dock{position:fixed;z-index:60;top:calc(var(--inset) + .5rem);left:calc(var(--inset) + .5rem);right:calc(var(--inset) + .5rem);display:flex;justify-content:space-between;align-items:center;pointer-events:none;transform:translateY(-140%);transition:transform .6s var(--e-expo)}
@@ -488,32 +496,29 @@ html:not(.js) .loader{display:none}
     <ul class="faq__grid" id="faqGrid"></ul>
   </section>
 
-  <!-- 8) Pie: centrado, con redes -->
+  <!-- 8) Pie: texto y redes, tres columnas y la marca gigante en contorno -->
   <footer class="ft" id="contacto">
-    <div class="ft__cta">
-      <span class="eyebrow eyebrow--light">Hablemos</span>
-      <p class="ft__big" data-split="lines"><span class="ln">¿Planificamos</span><span class="ln">tu riego?</span></p>
-      <div class="ft__btns" data-iv="opacity:0,y:20" data-ivd="150" data-ivc="200,24">
-        <button class="pill pill--light" type="button" data-open-modal>Pedir asesoramiento <svg class="pill__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-        <a class="pill pill--ghost" href="https://wa.me/5492613388255?text=Hola%20Rolwin%2C%20quiero%20consultar%20por%20un%20sistema%20de%20riego." target="_blank" rel="noopener">WhatsApp</a>
+    <div class="ft__top">
+      <div class="ft__intro">
+        <img class="ft__logo" src="media/rolwin-white.svg" alt="Rolwin">
+        <p class="ft__blurb">Diseño, instalación e insumos para riego agrícola en Mendoza, desde Luján de Cuyo.</p>
+        <ul class="ft__socs" aria-label="Redes de Rolwin"><li><a class="ft__soc" href="https://www.instagram.com/rolwin.argentina/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://www.facebook.com/RolwinMendoza/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5H16V5h-2.2C11.6 5 10.5 6.4 10.5 8.6V11H8.5v3.3h2V21h3.3v-6.7h2.3l.4-3.3h-2.7V9.3c0-.5.3-.8.7-.8z"/></svg></a></li><li><a class="ft__soc" href="https://www.linkedin.com/company/rolwin-sas/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6M11.5 13c0-1.6 1-2.6 2.3-2.6s2.2.9 2.2 2.6v3.5"/></svg></a></li><li><a class="ft__soc" href="https://www.tiktok.com/@rolwin.riegos" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.4 2 4 4.5 4.3"/></svg></a></li><li><a class="ft__soc" href="https://www.youtube.com/channel/UC-fbegUVOZahf5QmsXbLPsQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.3 9.4l4.4 2.6-4.4 2.6z" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://wa.me/5492613388255" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.3 18.4z"/><path d="M9.2 8.6c.2-.4.6-.4.8 0l.6 1.4c.1.3 0 .5-.2.7l-.4.4c.5 1 1.3 1.8 2.3 2.3l.4-.4c.2-.2.5-.3.7-.2l1.4.6c.4.2.4.6 0 .8-.6.5-1.4.8-2.2.5a7.2 7.2 0 0 1-3.9-3.9c-.3-.8 0-1.6.5-2.2z"/></svg></a></li></ul>
       </div>
+      <nav class="ft__col" aria-label="Soluciones"><h3>Soluciones</h3><ul><li><a href="#soluciones" data-sol="0">Riego por goteo</a></li><li><a href="#soluciones" data-sol="1">Goteo enterrado</a></li><li><a href="#soluciones" data-sol="2">Riego antiheladas</a></li><li><a href="#soluciones" data-sol="3">Riego por aspersión</a></li><li><a href="#soluciones" data-sol="4">Microaspersión</a></li><li><a href="#soluciones" data-sol="5">Pivots de riego</a></li></ul></nav>
+      <nav class="ft__col" aria-label="Rolwin"><h3>Rolwin</h3><ul>
+        <li><a href="#servicios" data-scroll>Cómo trabajamos</a></li>
+        <li><a href="#lujan" data-scroll>Luján de Cuyo</a></li>
+        <li><a href="#preguntas" data-scroll>Preguntas frecuentes</a></li>
+        <li><button type="button" data-open-modal>Pedir asesoramiento</button> <span class="ft__tag">Diseño sin cargo</span></li>
+      </ul></nav>
+      <div class="ft__col"><h3>Contacto</h3><address><ul>
+        <li><a href="https://wa.me/5492613388255?text=Hola%20Rolwin%2C%20quiero%20consultar%20por%20un%20sistema%20de%20riego." target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="tel:+5492613388255">+54 261 338-8255</a></li>
+        <li><a href="mailto:contacto@rolwin.com.ar">contacto@rolwin.com.ar</a></li>
+        <li class="ft__muted">Lateral Este 1675, Luján de Cuyo, Mendoza</li>
+      </ul></address></div>
     </div>
-    <div class="ft__mid">
-      <img class="ft__logo" src="media/rolwin-white.svg" alt="Rolwin">
-      <p class="ft__blurb">Diseño, instalación e insumos para riego agrícola en Mendoza.</p>
-      <nav class="ft__nav" aria-label="Pie de página">
-        <a href="#soluciones" data-scroll>Soluciones</a>
-        <a href="#servicios" data-scroll>Cómo trabajamos</a>
-        <a href="#lujan" data-scroll>Luján de Cuyo</a>
-        <a href="#preguntas" data-scroll>Preguntas</a>
-      </nav>
-      <ul class="ft__socs" aria-label="Redes de Rolwin" data-iv="opacity:0,y:16" data-ivd="100" data-ivc="200,24"><li><a class="ft__soc" href="https://www.instagram.com/rolwin.argentina/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://www.facebook.com/RolwinMendoza/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5H16V5h-2.2C11.6 5 10.5 6.4 10.5 8.6V11H8.5v3.3h2V21h3.3v-6.7h2.3l.4-3.3h-2.7V9.3c0-.5.3-.8.7-.8z"/></svg></a></li><li><a class="ft__soc" href="https://www.linkedin.com/company/rolwin-sas/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6M11.5 13c0-1.6 1-2.6 2.3-2.6s2.2.9 2.2 2.6v3.5"/></svg></a></li><li><a class="ft__soc" href="https://www.tiktok.com/@rolwin.riegos" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.4 2 4 4.5 4.3"/></svg></a></li><li><a class="ft__soc" href="https://www.youtube.com/channel/UC-fbegUVOZahf5QmsXbLPsQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.3 9.4l4.4 2.6-4.4 2.6z" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://wa.me/5492613388255" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.3 18.4z"/><path d="M9.2 8.6c.2-.4.6-.4.8 0l.6 1.4c.1.3 0 .5-.2.7l-.4.4c.5 1 1.3 1.8 2.3 2.3l.4-.4c.2-.2.5-.3.7-.2l1.4.6c.4.2.4.6 0 .8-.6.5-1.4.8-2.2.5a7.2 7.2 0 0 1-3.9-3.9c-.3-.8 0-1.6.5-2.2z"/></svg></a></li></ul>
-      <address class="ft__addr">
-        <a href="mailto:contacto@rolwin.com.ar">contacto@rolwin.com.ar</a>
-        <a href="tel:+5492613388255">+54 261 338-8255</a>
-        <span>Lateral Este 1675, Luján de Cuyo, Mendoza</span>
-      </address>
-    </div>
+    <div class="ft__mark" aria-hidden="true"><span class="ft__word"><i>R</i><i>O</i><i>L</i><i>W</i><i>I</i><i>N</i></span></div>
     <div class="ft__bar">
       <span>© 2026 Rolwin S.A.S. Todos los derechos reservados.</span>
       <span>Las imágenes de cultivos y del recorrido son ilustrativas.</span>
