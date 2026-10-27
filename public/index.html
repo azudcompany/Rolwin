@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
 <title>Rolwin Riegos</title>
 <meta name="description" content="Diseño, instalación e insumos para riego agrícola en Mendoza: goteo, aspersión, antiheladas y pivots. Desde Luján de Cuyo, hace más de 25 años.">
 <meta name="theme-color" content="#003d7a">
-<meta name="robots" content="noindex, nofollow">
 <link rel="preload" href="media/onest.woff" as="font" type="font/woff" crossorigin>
 <style>
 /* Onest (SIL Open Font License, ver media/onest-OFL.txt), alojada junto a la página para que funcione sin conexión */
@@ -138,36 +138,17 @@ html:not(.js) .loader{display:none}
 .lg{width:min(84vw,24rem);height:auto;overflow:visible;filter:drop-shadow(0 .5rem 2rem rgb(0 20 45/.35))}
 @media (min-width:640px){.lg{width:min(62vw,62rem)}}
 .lg-l,.lg-mark,.lg-tag{transform-box:fill-box}
+/* centrado óptico: la hoja de la izquierda es liviana y la palabra pesa más, así que el conjunto se corre un poco a la izquierda */
+#heroLogo .lg{translate:-3.4% 0}
 .js .lg-l{transform:translateY(55%);opacity:0;transition:transform 1100ms var(--e-expo),opacity 900ms var(--e-expo);transition-delay:calc(380ms + var(--i) * 85ms)}
 .js .lg-mark{transform:scale(.55) rotate(-14deg);transform-origin:50% 60%;opacity:0;transition:transform 1300ms var(--e-expo),opacity 900ms var(--e-expo);transition-delay:120ms}
 .js .lg-tag{transform:translateY(40%);opacity:0;transition:transform 1000ms var(--e-expo),opacity 900ms var(--e-expo);transition-delay:900ms}
 .js .jr__logo.is-in .lg-l,.js .jr__logo.is-in .lg-mark,.js .jr__logo.is-in .lg-tag{transform:none;opacity:1}
 .jr__title{padding:1rem 1.5rem 0;font-size:14.2vw;font-weight:500;text-transform:uppercase;line-height:.85;letter-spacing:-.03em;white-space:nowrap}
 @media (min-width:640px){.jr__title{padding:1rem 2.5rem 0;font-size:12.5vw}}
-.jr__bottom{margin-top:auto;display:flex;flex-direction:column;gap:1.5rem;padding:0 1.5rem 1.75rem}
-@media (min-width:640px){.jr__bottom{flex-direction:row;justify-content:space-between;align-items:flex-end;padding:0 2.5rem 2.5rem}}
-.jr__tag{font-size:1.9rem;font-weight:500;text-transform:uppercase;line-height:.95;letter-spacing:-.02em;color:rgb(255 255 255/.88)}
-@media (min-width:640px){.jr__tag{font-size:2.4rem}}
-.jr__lead{margin-top:1rem;max-width:30rem;font-size:.95rem;line-height:1.5;color:rgb(255 255 255/.8)}
+.jr__bottom{margin-top:auto;display:flex;justify-content:center;padding:0 1.5rem 2rem}
+@media (min-width:640px){.jr__bottom{padding:0 2.5rem 2.75rem}}
 .jr__ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
-.jr__cluster{display:flex;align-items:flex-end;gap:1rem}
-.mini{display:none;width:16rem;flex-direction:column;gap:.75rem}
-@media (min-width:768px){.mini{display:flex}}
-.mini__stage{position:relative;height:5rem}
-.mini__card{position:absolute;inset:0;display:flex;gap:.75rem;padding:.75rem;color:#fff}
-.mini__card img{width:3.5rem;height:3.5rem;border-radius:var(--r-xl);object-fit:cover;flex:none}
-.mini__brand{font-size:.7rem;font-weight:500;text-transform:uppercase;letter-spacing:.08em}
-.mini__title{font-size:.7rem;text-transform:uppercase;opacity:.8;margin-top:.15rem}
-.mini__cta{display:inline-block;margin-top:.4rem;font-size:.65rem;text-decoration:underline;text-underline-offset:.25em}
-.years{display:flex;gap:.75rem;align-items:stretch;padding:.75rem;width:100%;max-width:20rem}
-@media (min-width:640px){.years{width:15rem}}
-.years__l{display:flex;flex-direction:column;justify-content:space-between;gap:.75rem;flex:1}
-.years__v{font-size:1.875rem;font-weight:500;line-height:1}
-.years__dots{display:flex}
-.years__dots i{width:1.25rem;height:1.25rem;border-radius:var(--r-pill);border:1px solid rgb(0 38 80/.4);margin-left:-.5rem}
-.years__dots i:first-child{margin-left:0}
-.years__c{font-size:.65rem;opacity:.85;line-height:1.3}
-.years img{width:4rem;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-xl);flex:none}
 
 /* Capítulos del recorrido */
 .ch.glass{background:rgb(0 26 54/.62)}
@@ -211,14 +192,8 @@ html:not(.js) .loader{display:none}
    ========================================================================== */
 .sol{position:relative;isolation:isolate;overflow:hidden;padding:4rem 1.5rem;background:var(--bg)}
 @media (min-width:640px){.sol{padding:5rem 2.5rem}}
-.sol__top{position:relative;z-index:20;display:flex;flex-direction:column;gap:1.25rem}
-@media (min-width:640px){.sol__top{flex-direction:row;justify-content:space-between;align-items:flex-start}}
-.badge{display:grid;place-content:center;text-align:center;width:7rem;height:7rem;border-radius:var(--r-pill);background:var(--surface)}
-@media (min-width:640px){.badge{width:8rem;height:8rem}}
-.badge b{font-size:1.25rem;font-weight:500;line-height:1.05}
-.badge small{display:block;margin:.35rem auto 0;max-width:7.5em;font-size:.6rem;color:var(--ink-soft);line-height:1.3}
+.sol__top{position:relative;z-index:20;display:flex;justify-content:flex-end}
 .bcard{display:flex;gap:1rem;align-items:flex-start;max-width:28rem;padding:1.25rem;border-radius:var(--r-card);background:var(--surface)}
-@media (min-width:640px){.bcard{gap:1.25rem;padding:1.5rem}}
 .bcard__n{flex:none;border-radius:var(--r-xl);background:var(--bg);padding:.5rem 1rem;font-size:1.25rem;font-weight:500}
 .bcard h3{font-size:1.125rem;font-weight:500}
 .bcard p{margin-top:.4rem;font-size:.75rem;line-height:1.6;color:var(--ink-soft)}
@@ -228,15 +203,24 @@ html:not(.js) .loader{display:none}
 .ghost .clip{padding-bottom:.12em;margin-bottom:-.12em}
 .ghost .clip>span{color:var(--ghost)}
 .ghost .gw3 .clip>span{color:var(--ink)}
-.coach{position:relative;z-index:10;width:13rem;margin:2.5rem auto 0;rotate:6deg}
-@media (min-width:640px){.ghost{font-size:8.2vw}.coach{position:absolute;left:50%;top:50%;width:16rem;margin:0;translate:-50% -46%}}
-.coach__stack{position:relative;aspect-ratio:3/4}
-.coach__card{position:absolute;inset:0;will-change:transform,opacity}
-.coach__fig{position:absolute;inset:0;border-radius:var(--r-card);background:var(--brand);overflow:hidden;box-shadow:0 1.5rem 3rem -1.5rem rgb(0 38 80/.45)}
-.coach__fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.coach__cap{position:absolute;left:.75rem;right:.75rem;bottom:.75rem;border-radius:var(--r-xl);background:rgb(0 30 64/.72);color:#fff;padding:.5rem .75rem}
-.coach__cap b{display:block;font-size:.875rem;font-weight:500}
-.coach__cap span{font-size:.65rem;opacity:.85}
+.coach{position:relative;z-index:10;width:min(20rem,100%);margin:2.5rem auto 0;perspective:1000px}
+@media (min-width:640px){.ghost{font-size:8.2vw}.coach{position:absolute;left:50%;top:50%;width:21rem;margin:0;translate:-50% -46%}}
+.coach__stack{position:relative;height:25.5rem;transform-style:preserve-3d;transition:transform .2s linear}
+.coach__card{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform,opacity}
+/* Tarjeta 3D: los elementos "flotan" a distinta profundidad cuando el puntero entra */
+.c3d{position:absolute;inset:0;display:flex;flex-direction:column;padding:1.25rem;border-radius:var(--r-card);background:var(--card);border:1px solid rgb(11 21 36/.1);box-shadow:0 1.5rem 3rem -1.75rem rgb(0 38 80/.4);transform-style:preserve-3d;transition:box-shadow .3s}
+.c3d>*{transform-style:preserve-3d}
+.c3d__i{display:block;width:fit-content;transition:transform .2s linear}
+.c3d__t{font-size:1.25rem;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+.c3d__d{margin-top:.4rem;max-width:24rem;font-size:.8rem;line-height:1.5;color:var(--ink-soft)}
+.c3d__img{width:100%;flex:1;min-height:0;margin-top:1rem;border-radius:var(--r-xl);overflow:hidden;background:var(--surface);transition:transform .2s linear,box-shadow .2s}
+.c3d__img img{display:block;width:100%;height:100%;object-fit:cover}
+.c3d__row{display:flex;justify-content:space-between;align-items:center;margin-top:1rem}
+.c3d__note{padding:.5rem .25rem;font-size:.7rem;color:var(--ink-soft)}
+.c3d__btn{padding:.55rem 1rem;border-radius:var(--r-xl);background:var(--ink);color:#fff;font-size:.72rem;font-weight:600;transition:transform .2s linear,background-color .25s}
+.c3d__btn:hover{background:var(--deep)}
+.coach.is-3d .c3d{box-shadow:0 2.5rem 4rem -1.5rem rgb(0 38 80/.45)}
+.coach.is-3d .c3d__img{box-shadow:0 1.25rem 1.75rem -1rem rgb(0 20 45/.45)}
 .sol__ctrl{position:relative;z-index:20;display:flex;justify-content:space-between;align-items:center;margin-top:3rem}
 @media (min-width:640px){.sol__ctrl{margin-top:6rem}}
 .sol__ctrlMid{display:flex;flex-direction:column;align-items:center;gap:.75rem}
@@ -246,8 +230,8 @@ html:not(.js) .loader{display:none}
 /* ==========================================================================
    3) Cómo trabajamos — filas numeradas
    ========================================================================== */
-.work{padding:6rem 1.5rem 8.5rem;background:var(--surface);border-radius:var(--r-lg)}
-@media (min-width:640px){.work{padding:6rem 2.5rem 8.5rem}}
+.work{padding:6rem 1.5rem 6rem;background:var(--surface);border-radius:var(--r-lg)}
+@media (min-width:640px){.work{padding:6rem 2.5rem 6rem}}
 .work__list{margin-top:3.5rem}
 .work__row{display:flex;width:100%;text-align:left;align-items:center;gap:1.5rem;padding:1.75rem 0;border-top:1px solid var(--hair)}
 .work li:last-child .work__row{border-bottom:1px solid var(--hair)}
@@ -260,31 +244,6 @@ html:not(.js) .loader{display:none}
 .work__arrow{display:grid;place-items:center;width:2.75rem;height:2.75rem;flex:none;border-radius:var(--r-pill);border:1px solid var(--hair)}
 .work__arrow svg{width:1.1rem;height:1.1rem;opacity:.55}
 
-/* ==========================================================================
-   4) Empresa
-   ========================================================================== */
-.emp{position:relative;margin-top:-2.5rem;padding:4rem 1.5rem 5rem;background:var(--bg);border-radius:var(--r-lg)}
-@media (min-width:640px){.emp{padding:4rem 2.5rem 5rem}}
-.emp__grid{display:grid;gap:2.5rem;align-items:end}
-@media (min-width:768px){.emp__grid{grid-template-columns:1fr 1fr}}
-.emp__intro{max-width:26rem}
-.emp__icon{width:4rem;height:4rem;border-radius:var(--r-card);object-fit:cover}
-.emp__intro .h2{margin-top:1.5rem}
-.emp__body{margin-top:1.5rem;font-size:.875rem;line-height:1.6;color:var(--ink-soft);max-width:22rem}
-.emp__vals{margin-top:2rem;display:grid;gap:.9rem;border-top:1px solid var(--hair);padding-top:1.25rem}
-.emp__vals li{display:flex;gap:.75rem;font-size:.8rem;color:var(--ink-soft)}
-.emp__vals b{min-width:8.5rem;font-weight:500;color:var(--ink)}
-.tiles{display:flex;align-items:flex-end;gap:1.25rem}
-.tile{flex:1;position:relative;aspect-ratio:3/4;border-radius:var(--r-card);overflow:hidden;background:var(--surface)}
-.tile:nth-child(2){margin-bottom:2rem}
-.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.tile figcaption{position:absolute;left:.75rem;right:.75rem;bottom:.75rem;border-radius:var(--r-xl);color:#fff;padding:.75rem 1rem}
-.tile--deep figcaption{background:rgb(0 30 64/.72)}
-.tile--green figcaption{background:rgb(45 122 62/.82)}
-.tile b{display:block;font-size:.875rem;font-weight:500}
-.tile span{display:block;margin-top:.15rem;font-size:.65rem;opacity:.88;line-height:1.35}
-@media (max-width:639px){.tile span{display:none}}
-.emp__note{margin-top:1rem;font-size:.7rem;color:var(--ink-soft);text-align:right}
 
 /* ==========================================================================
    5) Desde Luján de Cuyo — la foto dentro de la frase se abre
@@ -309,18 +268,6 @@ html:not(.js) .loader{display:none}
 .js .lj__w,.js .lj__slot{opacity:0}
 .jr__card.is-past .jr__heroIn{visibility:hidden}
 
-/* ==========================================================================
-   6) Números (sólo datos reales de Rolwin)
-   ========================================================================== */
-.stats{margin-top:.75rem;padding:5rem 1.5rem;background:var(--deep);color:#fff;border-radius:var(--r-lg)}
-@media (min-width:640px){.stats{padding:5rem 2.5rem}}
-.stats dl{display:grid;grid-template-columns:1fr 1fr;column-gap:2rem;row-gap:3rem;margin-top:4rem}
-@media (min-width:1024px){.stats dl{grid-template-columns:repeat(4,1fr)}}
-.stat{border-top:1px solid rgb(255 255 255/.2);padding-top:1.25rem}
-.stat dd{margin:0}
-.stat__v{font-size:3.75rem;font-weight:500;letter-spacing:-.03em;line-height:1}
-@media (min-width:640px){.stat__v{font-size:4.5rem}}
-.stat__l{margin-top:.75rem;font-size:.875rem;color:rgb(255 255 255/.68)}
 
 /* ==========================================================================
    7) Preguntas frecuentes
@@ -338,25 +285,25 @@ html:not(.js) .loader{display:none}
 /* ==========================================================================
    8) Pie / contacto
    ========================================================================== */
-.ft{margin-top:.75rem;padding:3.5rem 1.5rem;background:var(--deep);color:#fff;border-radius:var(--r-lg)}
-@media (min-width:640px){.ft{padding:4rem 2.5rem}}
-.ft__cta{display:flex;flex-direction:column;gap:2rem;padding-bottom:3.5rem;border-bottom:1px solid rgb(255 255 255/.15)}
-@media (min-width:640px){.ft__cta{flex-direction:row;justify-content:space-between;align-items:flex-end}}
-.ft__big{margin-top:1rem;font-size:2.6rem;font-weight:500;line-height:.92;letter-spacing:-.03em}
-@media (min-width:640px){.ft__big{font-size:3.75rem}}
-.ft__btns{display:flex;flex-wrap:wrap;gap:.75rem}
-.ft__cols{display:grid;gap:2.5rem;padding:3.5rem 0}
-@media (min-width:768px){.ft__cols{grid-template-columns:1.4fr 1fr 1fr 1fr}}
-.ft__brand img{width:10rem}
-.ft__blurb{margin-top:1rem;font-size:.875rem;line-height:1.6;color:rgb(255 255 255/.68);max-width:20rem}
-.ft address{font-style:normal;margin-top:1.5rem;display:grid;gap:.5rem;font-size:.875rem;color:rgb(255 255 255/.82)}
-.ft address a:hover{color:#fff;text-decoration:underline;text-underline-offset:.25em}
-.ft address span{color:rgb(255 255 255/.58)}
-.ft h3{font-size:.75rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:rgb(255 255 255/.5)}
-.ft nav ul{margin-top:1rem;display:grid;gap:.75rem;font-size:.875rem;color:rgb(255 255 255/.82)}
-.ft nav a:hover,.ft nav button:hover{color:#fff;text-decoration:underline;text-underline-offset:.25em}
-.ft__bar{display:flex;flex-direction:column;gap:1rem;padding-top:2rem;border-top:1px solid rgb(255 255 255/.15);font-size:.8rem;color:rgb(255 255 255/.6)}
-@media (min-width:640px){.ft__bar{flex-direction:row;justify-content:space-between;align-items:center}}
+.ft{margin-top:.75rem;padding:4.5rem 1.5rem 2rem;background:var(--deep);color:#fff;border-radius:var(--r-lg);text-align:center}
+@media (min-width:640px){.ft{padding:5.5rem 2.5rem 2.25rem}}
+.ft__cta{display:flex;flex-direction:column;align-items:center;padding-bottom:4rem;border-bottom:1px solid rgb(255 255 255/.15)}
+.ft__big{margin-top:1.25rem;font-size:2.8rem;font-weight:500;line-height:.92;letter-spacing:-.03em}
+@media (min-width:640px){.ft__big{font-size:4.5rem}}
+.ft__btns{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2.25rem}
+.ft__mid{display:flex;flex-direction:column;align-items:center;padding:3.75rem 0 3.25rem}
+.ft__logo{width:11rem}
+.ft__blurb{margin-top:1rem;max-width:26rem;font-size:.9rem;line-height:1.6;color:rgb(255 255 255/.68)}
+.ft__nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem 2rem;margin-top:2.25rem;font-size:.9rem;color:rgb(255 255 255/.85)}
+.ft__nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:.3em}
+.ft__socs{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2.25rem}
+.ft__soc{display:grid;place-items:center;width:2.9rem;height:2.9rem;border-radius:var(--r-pill);border:1px solid rgb(255 255 255/.22);color:#fff;transition:background-color .25s,border-color .25s,color .25s,transform .25s var(--e-expo)}
+.ft__soc svg{width:1.2rem;height:1.2rem}
+.ft__soc:hover{background:#fff;border-color:#fff;color:var(--deep);transform:translateY(-2px)}
+.ft__addr{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.75rem;margin-top:2.25rem;font-style:normal;font-size:.85rem;color:rgb(255 255 255/.78)}
+.ft__addr a:hover{color:#fff;text-decoration:underline;text-underline-offset:.25em}
+.ft__addr span{color:rgb(255 255 255/.58)}
+.ft__bar{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding-top:1.75rem;border-top:1px solid rgb(255 255 255/.15);font-size:.75rem;color:rgb(255 255 255/.55)}
 
 /* — Barra fija después del inicio — */
 .dock{position:fixed;z-index:60;top:calc(var(--inset) + .5rem);left:calc(var(--inset) + .5rem);right:calc(var(--inset) + .5rem);display:flex;justify-content:space-between;align-items:center;pointer-events:none;transform:translateY(-140%);transition:transform .6s var(--e-expo)}
@@ -452,7 +399,7 @@ html:not(.js) .loader{display:none}
         <nav class="hd__nav" aria-label="Secciones">
           <a href="#soluciones" data-scroll>Soluciones</a>
           <a href="#servicios" data-scroll>Cómo trabajamos</a>
-          <a href="#empresa" data-scroll>Empresa</a>
+          <a href="#preguntas" data-scroll>Preguntas</a>
         </nav>
         <div class="hd__right">
           <button class="hd__cta" type="button" data-open-modal>Pedir asesoramiento</button>
@@ -462,31 +409,10 @@ html:not(.js) .loader{display:none}
 
       <div class="jr__hero">
         <div class="jr__heroIn">
-          <h1 id="hero-title" class="sr-only">Rolwin, eficiencia en riego. Cada gota impulsa el crecimiento.</h1>
+          <h1 id="hero-title" class="sr-only">Rolwin, eficiencia en riego. Sistemas de riego agrícola en Luján de Cuyo, Mendoza.</h1>
           <div class="jr__logo" id="heroLogo"><svg class="lg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.020831 26.458333" version="1.1" id="svg1"><defs id="defs1"><clipPath id="clipPath268"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-395.30453,-325.53091)" id="path268"></path></clipPath><clipPath id="clipPath270"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-468.82404,-298.55771)" id="path270"></path></clipPath><clipPath id="clipPath272"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-530.04939,-270.51011)" id="path272"></path></clipPath><clipPath id="clipPath274"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-578.86299,-306.31521)" id="path274"></path></clipPath><clipPath id="clipPath276"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-653.69514,-269.43581)" id="path276"></path></clipPath><clipPath id="clipPath278"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-696.78002,-317.17601)" id="path278"></path></clipPath><clipPath id="clipPath281"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-211.22738,-363.09871)" id="path281"></path></clipPath><clipPath id="clipPath287"><path d="M 0,595.276 H 841.89 V 0 H 0 Z" transform="translate(-156.87563,-263.63161)" id="path287"></path></clipPath></defs><g id="layer1"><g id="g763" transform="matrix(0.09731934,0,0,0.09731934,-347.38767,-25.018164)"><g class="lg-l" style="--i:0"><path id="path267" d="M 0,0 C 0,1.033 -0.16,2.107 -0.477,3.222 -0.796,4.335 -1.333,5.35 -2.088,6.266 -2.845,7.18 -3.899,7.937 -5.251,8.533 -6.605,9.131 -8.315,9.428 -10.383,9.428 H -26.615 V -9.668 h 15.874 c 3.5,0 6.165,0.896 7.996,2.686 C -0.916,-5.192 0,-2.865 0,0 m 7.639,-19.096 c 2.704,-1.194 4.613,-2.885 5.728,-5.073 1.114,-2.189 2.029,-4.675 2.746,-7.46 l 6.086,-23.87 c 0.159,-0.477 0.139,-1.055 -0.059,-1.73 -0.2,-0.677 -0.776,-1.015 -1.73,-1.015 H 7.877 c -0.876,0 -1.789,0.1 -2.745,0.299 -0.955,0.198 -1.632,0.895 -2.029,2.088 l -5.251,21.125 c -1.035,3.898 -2.566,6.604 -4.595,8.117 -2.029,1.51 -4.834,2.267 -8.414,2.267 h -11.578 v -31.389 c 0,-1.115 -0.159,-1.811 -0.477,-2.089 -0.319,-0.279 -1.074,-0.418 -2.268,-0.418 h -12.77 c -0.955,0 -1.652,0.179 -2.089,0.537 -0.438,0.359 -0.656,1.014 -0.656,1.97 v 73.878 c 0,2.387 0.477,4.197 1.432,5.43 0.955,1.233 2.864,1.85 5.729,1.85 h 29.241 c 8.672,0 15.376,-2.189 20.111,-6.563 4.733,-4.377 7.101,-10.265 7.101,-17.665 0,-4.058 -0.954,-7.877 -2.865,-11.457 C 13.845,-13.845 11.1,-16.59 7.519,-18.5 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,3954.6327,359.66013)" clip-path="url(#clipPath268)"></path></g><g class="lg-l" style="--i:1"><path id="path269" d="m 0,0 c 0,2.703 -0.199,5.171 -0.597,7.399 -0.399,2.227 -1.074,4.136 -2.029,5.729 -0.955,1.591 -2.19,2.844 -3.7,3.76 -1.512,0.914 -3.382,1.372 -5.609,1.372 -4.218,0 -7.34,-1.611 -9.369,-4.833 -2.03,-3.223 -3.044,-7.58 -3.044,-13.069 0,-5.968 0.934,-10.503 2.805,-13.607 1.868,-3.103 4.953,-4.654 9.25,-4.654 2.226,0 4.117,0.456 5.669,1.372 1.551,0.914 2.823,2.188 3.819,3.819 0.994,1.631 1.71,3.521 2.148,5.67 C -0.22,-4.894 0,-2.547 0,0 m 18.022,0.358 c 0,-10.503 -2.507,-18.619 -7.519,-24.348 -5.013,-5.729 -12.652,-8.593 -22.916,-8.593 -10.344,0 -17.903,2.864 -22.677,8.593 -4.774,5.729 -7.161,13.765 -7.161,24.109 0,5.091 0.696,9.686 2.089,13.785 1.391,4.097 3.381,7.537 5.967,10.324 2.585,2.784 5.73,4.933 9.43,6.445 3.699,1.51 7.896,2.267 12.591,2.267 10.025,0 17.563,-2.884 22.617,-8.652 5.052,-5.77 7.579,-13.746 7.579,-23.93" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,4052.6587,395.6244)" clip-path="url(#clipPath270)"></path></g><g class="lg-l" style="--i:2"><path id="path271" d="m 0,0 c 0.159,-0.877 0.12,-1.453 -0.119,-1.731 -0.239,-0.279 -0.797,-0.617 -1.671,-1.014 -1.67,-0.637 -3.721,-1.093 -6.147,-1.373 -2.427,-0.278 -4.549,-0.418 -6.368,-0.418 -2.372,0 -4.485,0.259 -6.342,0.776 -1.858,0.519 -3.417,1.392 -4.681,2.625 -1.265,1.233 -2.235,2.925 -2.906,5.073 -0.671,2.149 -1.007,4.852 -1.007,8.116 v 69.702 c 0,1.113 0.217,1.769 0.651,1.968 0.434,0.198 1.088,0.299 1.956,0.299 h 12.092 c 0.869,0 1.52,-0.14 1.955,-0.417 0.434,-0.281 0.652,-0.857 0.652,-1.732 V 15.635 c 0,-1.99 0.278,-3.402 0.836,-4.237 0.556,-0.836 1.749,-1.253 3.58,-1.253 0.636,0 1.391,0.039 2.268,0.119 0.874,0.078 1.59,0.158 2.148,0.239 0.716,0.078 1.212,0.018 1.492,-0.179 0.278,-0.2 0.457,-0.618 0.538,-1.254 z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,4134.2925,433.0212)" clip-path="url(#clipPath272)"></path></g><g class="lg-l" style="--i:3"><path id="path273" d="m 0,0 -4.894,-16.471 -5.37,-16.947 c -0.955,-2.548 -1.931,-4.218 -2.924,-5.013 -0.997,-0.795 -2.566,-1.193 -4.715,-1.193 h -6.565 c -1.909,0 -3.441,0.398 -4.594,1.193 -1.155,0.795 -2.089,2.545 -2.805,5.251 l -13.606,54.783 c -0.239,0.874 -0.199,1.451 0.119,1.73 0.317,0.278 0.875,0.417 1.672,0.417 h 13.486 c 0.954,0 1.65,-0.079 2.089,-0.238 0.436,-0.16 0.776,-0.716 1.014,-1.671 l 4.058,-21.244 3.223,-19.335 h 0.716 l 4.177,15.038 5.371,18.619 c 0.635,1.988 1.432,3.44 2.387,4.356 0.955,0.914 2.546,1.373 4.774,1.373 h 6.206 c 2.068,0 3.462,-0.518 4.177,-1.552 0.716,-1.035 1.392,-2.428 2.03,-4.177 l 5.489,-18.38 4.297,-15.397 h 0.716 l 2.864,18.978 3.939,21.601 c 0.159,0.875 0.397,1.412 0.717,1.612 0.317,0.198 0.954,0.299 1.909,0.299 l 13.964,0.118 c 0.795,0 1.332,-0.139 1.611,-0.417 0.278,-0.279 0.338,-0.856 0.179,-1.73 L 31.986,-33.18 c -0.716,-2.706 -1.671,-4.456 -2.864,-5.251 -1.194,-0.795 -2.745,-1.193 -4.655,-1.193 H 18.26 c -1.115,0 -2.049,0.059 -2.804,0.179 -0.757,0.118 -1.433,0.398 -2.029,0.835 -0.597,0.437 -1.115,1.074 -1.551,1.91 -0.439,0.835 -0.896,1.928 -1.373,3.282 L 5.251,-16.232 0.596,0 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,4199.3773,385.28107)" clip-path="url(#clipPath274)"></path></g><g class="lg-l" style="--i:4"><path id="path275" d="M 0,0 C 0,-0.877 -0.16,-1.453 -0.478,-1.731 -0.796,-2.01 -1.512,-2.149 -2.625,-2.149 H -14.8 c -0.876,0 -1.512,0.139 -1.909,0.418 -0.399,0.278 -0.597,0.854 -0.597,1.731 v 58.362 c 0,0.875 0.198,1.451 0.597,1.732 0.397,0.277 1.033,0.417 1.909,0.417 h 12.175 c 1.113,0 1.829,-0.14 2.147,-0.417 C -0.16,59.813 0,59.237 0,58.362 Z m 1.552,76.862 c 0,-2.786 -0.976,-5.113 -2.924,-6.982 -1.951,-1.87 -4.318,-2.804 -7.102,-2.804 -2.706,0 -5.033,0.934 -6.982,2.804 -1.951,1.869 -2.924,4.196 -2.924,6.982 0,1.432 0.257,2.745 0.776,3.939 0.516,1.193 1.233,2.227 2.148,3.102 0.914,0.875 1.97,1.571 3.163,2.09 1.194,0.516 2.465,0.775 3.819,0.775 1.352,0 2.644,-0.259 3.879,-0.775 1.233,-0.519 2.307,-1.215 3.223,-2.09 0.914,-0.875 1.629,-1.909 2.148,-3.102 0.516,-1.194 0.776,-2.507 0.776,-3.939" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,4299.1535,434.4536)" clip-path="url(#clipPath276)"></path></g><g class="lg-l" style="--i:4"><path id="path277" d="M 0,0 C -0.796,0 -1.93,-0.02 -3.402,-0.059 -4.875,-0.1 -6.445,-0.279 -8.116,-0.597 V -47.74 c 0,-0.877 -0.14,-1.453 -0.418,-1.731 -0.279,-0.279 -0.975,-0.418 -2.088,-0.418 h -12.293 c -0.877,0 -1.513,0.139 -1.91,0.418 -0.399,0.278 -0.597,0.854 -0.597,1.731 V 3.461 c 0,2.705 0.476,4.834 1.429,6.386 0.953,1.551 2.939,2.644 5.956,3.282 0.793,0.159 1.923,0.298 3.392,0.417 1.47,0.12 3.038,0.239 4.705,0.359 1.667,0.119 3.316,0.218 4.944,0.298 1.626,0.078 3.036,0.119 4.228,0.119 5.557,0 10.361,-0.557 14.411,-1.671 4.049,-1.115 7.404,-2.885 10.063,-5.311 2.659,-2.428 4.646,-5.609 5.957,-9.548 1.309,-3.938 1.966,-8.733 1.966,-14.381 V -47.74 c 0,-0.877 -0.141,-1.453 -0.417,-1.731 -0.276,-0.279 -0.968,-0.418 -2.073,-0.418 H 16.812 c -0.87,0 -1.502,0.139 -1.897,0.418 -0.395,0.278 -0.593,0.854 -0.593,1.731 v 32.225 c 0,2.625 -0.22,4.893 -0.656,6.803 -0.439,1.909 -1.194,3.521 -2.268,4.833 C 10.324,-2.566 8.85,-1.593 6.982,-0.955 5.112,-0.319 2.784,0 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,4356.6,370.8)" clip-path="url(#clipPath278)"></path></g><g class="lg-tag"><path id="path279" d="M 3.8437703,-22.404931 H 15.902364 c 0.169922,0 0.319336,0.06738 0.445313,0.199218 0.131835,0.125977 0.199218,0.275391 0.199218,0.445313 0,0.1875 -0.06738,0.345703 -0.199218,0.46875 -0.125977,0.117187 -0.275391,0.175781 -0.445313,0.175781 H 4.2187703 l 0.328125,-0.550781 v 9.925781 L 4.1601766,-12.1979 H 14.460958 c 0.169922,0 0.319336,0.06738 0.445312,0.199219 0.131836,0.125976 0.199219,0.27539 0.199219,0.445312 0,0.196289 -0.06738,0.351563 -0.199219,0.46875 -0.125976,0.117188 -0.27539,0.175781 -0.445312,0.175781 H 4.2187703 L 4.5468953,-11.2604 V -1.1236813 L 4.4179891,-1.276025 H 15.902364 c 0.169922,0 0.319336,0.067383 0.445313,0.1992187 0.131835,0.12597661 0.199218,0.2695313 0.199218,0.4335938 0,0.19628906 -0.06738,0.3515625 -0.199218,0.46875 C 16.2217,-0.057275 16.072286,0.00131875 15.902364,0.00131875 H 3.8437703 c -0.1728516,0 -0.3251953,-0.06152344 -0.4570312,-0.1875 -0.1259766,-0.13183594 -0.1875,-0.28417969 -0.1875,-0.45703125 V -21.7604 c 0,-0.169922 0.061523,-0.319336 0.1875,-0.445313 0.1318359,-0.131835 0.2841796,-0.199218 0.4570312,-0.199218 z M 21.987325,0.00131875 c -0.196289,0 -0.351563,-0.06152344 -0.46875,-0.1875 -0.117188,-0.13183594 -0.175781,-0.28417969 -0.175781,-0.45703125 V -21.7604 c 0,-0.169922 0.06152,-0.319336 0.1875,-0.445313 0.131836,-0.131835 0.284179,-0.199218 0.457031,-0.199218 h 12.058594 c 0.169922,0 0.319336,0.06738 0.445312,0.199218 0.131836,0.125977 0.199219,0.275391 0.199219,0.445313 0,0.1875 -0.06738,0.345703 -0.199219,0.46875 -0.125976,0.117187 -0.27539,0.175781 -0.445312,0.175781 H 22.526387 l 0.09375,-0.128906 v 9.210937 l -0.128906,-0.257812 h 10.113281 c 0.169922,0 0.319336,0.06738 0.445313,0.199219 0.131836,0.125976 0.199219,0.27539 0.199219,0.445312 0,0.1875 -0.06738,0.345703 -0.199219,0.46875 -0.125977,0.117188 -0.275391,0.175781 -0.445313,0.175781 H 22.432637 l 0.1875,-0.257812 v 10.6171875 c 0,0.17285156 -0.05859,0.32519531 -0.175781,0.45703125 -0.117187,0.12597656 -0.269531,0.1875 -0.457031,0.1875 z M 40.834005,-0.66665 c -0.02344,0.1875 -0.102539,0.34863281 -0.234375,0.48046875 -0.125977,0.12597656 -0.275391,0.1875 -0.445313,0.1875 -0.210937,0 -0.375,-0.06152344 -0.492187,-0.1875 C 39.544942,-0.31801719 39.486348,-0.47915 39.486348,-0.66665 v -21.058594 c 0,-0.193359 0.06152,-0.354492 0.1875,-0.480469 0.131836,-0.131835 0.292969,-0.199218 0.480469,-0.199218 0.19336,0 0.354492,0.06738 0.480469,0.199218 0.131836,0.125977 0.199219,0.28711 0.199219,0.480469 z m 22.980468,-19.875 c 0.169922,0.125977 0.263672,0.269531 0.28125,0.433594 0.02344,0.158203 -0.02051,0.322265 -0.128906,0.492187 -0.102539,0.149414 -0.234375,0.231446 -0.398437,0.246094 -0.158203,0.0088 -0.310547,-0.0293 -0.457032,-0.117188 -0.899414,-0.615234 -1.875,-1.104492 -2.929687,-1.464843 -1.054688,-0.366211 -2.179688,-0.550782 -3.375,-0.550782 -1.368164,0 -2.645508,0.251954 -3.832031,0.75 -1.180664,0.500977 -2.220703,1.212891 -3.117188,2.132813 -0.899414,0.914062 -1.605469,2.000977 -2.121094,3.257812 -0.509765,1.259766 -0.761718,2.645508 -0.761718,4.160157 0,1.5175779 0.251953,2.9033201 0.761718,4.160156 0.515625,1.2597656 1.22168,2.3496094 2.121094,3.2695312 0.896485,0.9140625 1.936524,1.6259766 3.117188,2.1328125 1.186523,0.5009766 2.463867,0.75000005 3.832031,0.75000005 1.195312,0 2.311523,-0.17871095 3.351562,-0.53906255 1.045899,-0.3662109 2.018555,-0.8496093 2.917969,-1.453125 0.146485,-0.099609 0.307617,-0.140625 0.480469,-0.1171875 0.169922,0.017578 0.307617,0.099609 0.410156,0.2460938 0.108399,0.1494141 0.152344,0.3105469 0.128906,0.4804687 -0.01758,0.1728516 -0.102539,0.3134766 -0.257812,0.421875 -0.509766,0.3603516 -1.154297,0.7119141 -1.933594,1.05468755 -0.773437,0.33691406 -1.599609,0.60644531 -2.472656,0.80859375 -0.875977,0.20214844 -1.751953,0.3046875 -2.625,0.3046875 -1.541016,0 -2.982422,-0.28710938 -4.324219,-0.85546875 -1.344726,-0.57714845 -2.52832,-1.38281255 -3.550781,-2.41406255 -1.025391,-1.0371093 -1.828125,-2.2558593 -2.414063,-3.65625 -0.585937,-1.3974609 -0.878906,-2.9296875 -0.878906,-4.5937497 0,-1.664063 0.292969,-3.19336 0.878906,-4.59375 0.585938,-1.397461 1.388672,-2.613282 2.414063,-3.644532 1.022461,-1.037109 2.206055,-1.842773 3.550781,-2.414062 1.341797,-0.577148 2.783203,-0.867188 4.324219,-0.867188 1.294922,0 2.545898,0.19336 3.75,0.574219 1.209961,0.383789 2.296875,0.919922 3.257812,1.605469 z m 5.947266,19.875 c -0.02344,0.1875 -0.102539,0.34863281 -0.234375,0.48046875 -0.125977,0.12597656 -0.275391,0.1875 -0.445312,0.1875 -0.210938,0 -0.375,-0.06152344 -0.492188,-0.1875 C 68.472677,-0.31801719 68.414083,-0.47915 68.414083,-0.66665 v -21.058594 c 0,-0.193359 0.06152,-0.354492 0.1875,-0.480469 0.131836,-0.131835 0.292969,-0.199218 0.480469,-0.199218 0.193359,0 0.354492,0.06738 0.480468,0.199218 0.131836,0.125977 0.199219,0.28711 0.199219,0.480469 z m 7.042969,-21.738281 h 12.058594 c 0.169921,0 0.319335,0.06738 0.445312,0.199218 0.131836,0.125977 0.199219,0.275391 0.199219,0.445313 0,0.1875 -0.06738,0.345703 -0.199219,0.46875 -0.125977,0.117187 -0.275391,0.175781 -0.445312,0.175781 H 77.179708 l 0.328125,-0.550781 v 9.925781 L 77.121114,-12.1979 h 10.300781 c 0.169922,0 0.319336,0.06738 0.445313,0.199219 0.131836,0.125976 0.199219,0.27539 0.199219,0.445312 0,0.196289 -0.06738,0.351563 -0.199219,0.46875 -0.125977,0.117188 -0.275391,0.175781 -0.445313,0.175781 H 77.179708 L 77.507833,-11.2604 V -1.1236813 L 77.378927,-1.276025 h 11.484375 c 0.169921,0 0.319335,0.067383 0.445312,0.1992187 0.131836,0.12597661 0.199219,0.2695313 0.199219,0.4335938 0,0.19628906 -0.06738,0.3515625 -0.199219,0.46875 -0.125977,0.1171875 -0.275391,0.17578125 -0.445312,0.17578125 H 76.804708 c -0.172852,0 -0.325196,-0.06152344 -0.457031,-0.1875 -0.125977,-0.13183594 -0.1875,-0.28417969 -0.1875,-0.45703125 V -21.7604 c 0,-0.169922 0.06152,-0.319336 0.1875,-0.445313 0.131835,-0.131835 0.284179,-0.199218 0.457031,-0.199218 z m 33.694332,0 c 0.19336,0 0.34278,0.05859 0.44532,0.175781 0.10839,0.117187 0.16406,0.263672 0.16406,0.433594 v 21.09374975 c 0,0.234375 -0.0703,0.41015625 -0.21094,0.52734375 -0.14062,0.1171875 -0.29297,0.17578125 -0.45703,0.17578125 -0.0879,0 -0.18164,-0.01757813 -0.28125,-0.05859375 -0.0937,-0.046875 -0.17285,-0.11132813 -0.23437,-0.19921875 L 95.077169,-20.54165 l 0.445312,-0.222656 v 20.22656225 c 0,0.14941406 -0.05859,0.27832031 -0.175781,0.38671875 -0.117188,0.10253906 -0.263672,0.15234375 -0.433594,0.15234375 -0.196289,0 -0.348633,-0.04980469 -0.457031,-0.15234375 -0.102539,-0.10839844 -0.152344,-0.23730469 -0.152344,-0.38671875 V -21.7604 c 0,-0.234375 0.06152,-0.398438 0.1875,-0.492188 0.131836,-0.09961 0.260742,-0.152343 0.386719,-0.152343 0.08496,0 0.169922,0.01758 0.257812,0.04687 0.08496,0.03223 0.158204,0.09082 0.222657,0.175781 l 14.789061,20.1679687 -0.25781,0.6445313 v -20.425781 c 0,-0.169922 0.0615,-0.316407 0.1875,-0.433594 0.13183,-0.117188 0.27246,-0.175781 0.42187,-0.175781 z m 23.58692,1.863281 c 0.16992,0.125977 0.26367,0.269531 0.28125,0.433594 0.0234,0.158203 -0.0205,0.322265 -0.12891,0.492187 -0.10254,0.149414 -0.23437,0.231446 -0.39844,0.246094 -0.1582,0.0088 -0.31054,-0.0293 -0.45703,-0.117188 -0.89941,-0.615234 -1.875,-1.104492 -2.92968,-1.464843 -1.05469,-0.366211 -2.17969,-0.550782 -3.375,-0.550782 -1.36817,0 -2.64551,0.251954 -3.83204,0.75 -1.18066,0.500977 -2.2207,1.212891 -3.11718,2.132813 -0.89942,0.914062 -1.60547,2.000977 -2.1211,3.257812 -0.50976,1.259766 -0.76172,2.645508 -0.76172,4.160157 0,1.5175779 0.25196,2.9033201 0.76172,4.160156 0.51563,1.2597656 1.22168,2.3496094 2.1211,3.2695312 0.89648,0.9140625 1.93652,1.6259766 3.11718,2.1328125 1.18653,0.5009766 2.46387,0.75000005 3.83204,0.75000005 1.19531,0 2.31152,-0.17871095 3.35156,-0.53906255 1.0459,-0.3662109 2.01855,-0.8496093 2.91797,-1.453125 0.14648,-0.099609 0.30761,-0.140625 0.48047,-0.1171875 0.16992,0.017578 0.30761,0.099609 0.41015,0.2460938 0.1084,0.1494141 0.15235,0.3105469 0.12891,0.4804687 -0.0176,0.1728516 -0.10254,0.3134766 -0.25781,0.421875 -0.50977,0.3603516 -1.1543,0.7119141 -1.9336,1.05468755 -0.77344,0.33691406 -1.59961,0.60644531 -2.47265,0.80859375 -0.87598,0.20214844 -1.75196,0.3046875 -2.625,0.3046875 -1.54102,0 -2.98243,-0.28710938 -4.32422,-0.85546875 -1.34473,-0.57714845 -2.52832,-1.38281255 -3.55078,-2.41406255 -1.0254,-1.0371093 -1.82813,-2.2558593 -2.41407,-3.65625 -0.58593,-1.3974609 -0.8789,-2.9296875 -0.8789,-4.5937497 0,-1.664063 0.29297,-3.19336 0.8789,-4.59375 0.58594,-1.397461 1.38867,-2.613282 2.41407,-3.644532 1.02246,-1.037109 2.20605,-1.842773 3.55078,-2.414062 1.34179,-0.577148 2.7832,-0.867188 4.32422,-0.867188 1.29492,0 2.54589,0.19336 3.75,0.574219 1.20996,0.383789 2.29687,0.919922 3.25781,1.605469 z m 5.95019,19.875 c -0.0234,0.1875 -0.10254,0.34863281 -0.23437,0.48046875 -0.12598,0.12597656 -0.27539,0.1875 -0.44531,0.1875 -0.21094,0 -0.375,-0.06152344 -0.49219,-0.1875 C 138.74709,-0.31801719 138.6885,-0.47915 138.6885,-0.66665 v -21.058594 c 0,-0.193359 0.0615,-0.354492 0.1875,-0.480469 0.13183,-0.131835 0.29297,-0.199218 0.48047,-0.199218 0.19335,0 0.35449,0.06738 0.48046,0.199218 0.13184,0.125977 0.19922,0.28711 0.19922,0.480469 z m 13.66114,-20.097656 -8.09766,20.34374975 c -0.041,0.13476562 -0.11426,0.24023437 -0.22266,0.31640625 -0.11132,0.0703125 -0.22851,0.10546875 -0.35156,0.10546875 -0.21094,0 -0.37207,-0.04980469 -0.48047,-0.15234375 -0.11133,-0.10839844 -0.17285,-0.23730469 -0.1875,-0.38671875 -0.0234,-0.0849609 -0.0176,-0.19335938 0.0234,-0.328125 l 8.61328,-21.18750025 c 0.0615,-0.169922 0.14063,-0.28125 0.23438,-0.328125 0.0996,-0.05273 0.22558,-0.08203 0.375,-0.08203 0.16992,0 0.30761,0.04102 0.41015,0.117187 0.1084,0.07031 0.18164,0.169922 0.22266,0.292969 l 8.61328,21.18750025 c 0.0234,0.0644531 0.0352,0.14941406 0.0352,0.2578125 0,0.19628906 -0.0674,0.34863281 -0.19922,0.45703125 -0.12598,0.10253906 -0.28711,0.15234375 -0.48047,0.15234375 -0.14942,0 -0.28125,-0.03515625 -0.39844,-0.10546875 -0.11719,-0.0761719 -0.19629,-0.18164063 -0.23437,-0.31640625 L 153.21682,-21.022119 Z m -5.91797,13.816406 0.44531,-1.2773438 h 10.37109 l 0.31641,1.2773438 z m 28.70508,-15.457031 h 12.05859 c 0.16992,0 0.31933,0.06738 0.44531,0.199218 0.13184,0.125977 0.19922,0.275391 0.19922,0.445313 0,0.1875 -0.0674,0.345703 -0.19922,0.46875 -0.12598,0.117187 -0.27539,0.175781 -0.44531,0.175781 H 176.8594 l 0.32812,-0.550781 v 9.925781 L 176.8008,-12.1979 h 10.30078 c 0.16992,0 0.31934,0.06738 0.44532,0.199219 0.13183,0.125976 0.19921,0.27539 0.19921,0.445312 0,0.196289 -0.0674,0.351563 -0.19921,0.46875 -0.12598,0.117188 -0.2754,0.175781 -0.44532,0.175781 H 176.8594 l 0.32812,-0.351562 v 10.1367187 l -0.12891,-0.1523437 h 11.48438 c 0.16992,0 0.31933,0.067383 0.44531,0.1992187 0.13184,0.12597661 0.19922,0.2695313 0.19922,0.4335938 0,0.19628906 -0.0674,0.3515625 -0.19922,0.46875 -0.12598,0.1171875 -0.27539,0.17578125 -0.44531,0.17578125 H 176.4844 c -0.17286,0 -0.3252,-0.06152344 -0.45704,-0.1875 -0.12597,-0.13183594 -0.1875,-0.28417969 -0.1875,-0.45703125 V -21.7604 c 0,-0.169922 0.0615,-0.319336 0.1875,-0.445313 0.13184,-0.131835 0.28418,-0.199218 0.45704,-0.199218 z m 33.69433,0 c 0.19336,0 0.34277,0.05859 0.44531,0.175781 0.1084,0.117187 0.16407,0.263672 0.16407,0.433594 v 21.09374975 c 0,0.234375 -0.0703,0.41015625 -0.21094,0.52734375 -0.14063,0.1171875 -0.29297,0.17578125 -0.45703,0.17578125 -0.0879,0 -0.18164,-0.01757813 -0.28125,-0.05859375 -0.0937,-0.046875 -0.17285,-0.11132813 -0.23438,-0.19921875 L 194.75686,-20.54165 l 0.44531,-0.222656 v 20.22656225 c 0,0.14941406 -0.0586,0.27832031 -0.17578,0.38671875 -0.11719,0.10253906 -0.26367,0.15234375 -0.4336,0.15234375 -0.19629,0 -0.34863,-0.04980469 -0.45703,-0.15234375 -0.10254,-0.10839844 -0.15234,-0.23730469 -0.15234,-0.38671875 V -21.7604 c 0,-0.234375 0.0615,-0.398438 0.1875,-0.492188 0.13183,-0.09961 0.26074,-0.152343 0.38672,-0.152343 0.085,0 0.16992,0.01758 0.25781,0.04687 0.085,0.03223 0.1582,0.09082 0.22266,0.175781 l 14.78906,20.1679687 -0.25781,0.6445313 v -20.425781 c 0,-0.169922 0.0615,-0.316407 0.1875,-0.433594 0.13183,-0.117188 0.27246,-0.175781 0.42187,-0.175781 z m 16.3125,22.40624975 c -0.21094,0 -0.375,-0.06152344 -0.49219,-0.1875 -0.11718,-0.13183594 -0.17578,-0.28417969 -0.17578,-0.45703125 V -21.7604 c 0,-0.169922 0.0615,-0.319336 0.1875,-0.445313 0.13184,-0.131835 0.28418,-0.199218 0.45703,-0.199218 h 8.44922 c 1.25684,0 2.3584,0.254883 3.30469,0.761718 0.95215,0.500977 1.69336,1.189454 2.22656,2.0625 0.53028,0.875977 0.79688,1.869141 0.79688,2.976563 0,0.978516 -0.17578,1.860352 -0.52735,2.648437 -0.35156,0.791016 -0.84375,1.447266 -1.47656,1.96875 -0.62695,0.524415 -1.34473,0.902344 -2.15625,1.136719 l -1.46484,-0.257812 c 0.84961,0 1.6582,0.219726 2.42578,0.65625 0.77344,0.439453 1.40039,1.0781247 1.88672,1.9218747 0.49218,0.84375 0.73828,1.875 0.73828,3.09375 0,1.0488282 0.0469,1.8457032 0.14062,2.390625 0.0996,0.5390625 0.22852,0.9375 0.38672,1.1953125 0.16406,0.2519532 0.35156,0.4511719 0.5625,0.5976563 0.13184,0.087891 0.22852,0.1962891 0.29297,0.328125 0.0615,0.12597656 0.0703,0.27539062 0.0234,0.4453125 -0.041,0.12597656 -0.11133,0.22851562 -0.21094,0.3046875 -0.0937,0.07910156 -0.19629,0.12890625 -0.30469,0.15234375 -0.10254,0.01757812 -0.21679,-0.0058594 -0.33984,-0.0703125 -0.30469,-0.16992188 -0.60352,-0.42480469 -0.89063,-0.76171875 -0.28125,-0.3427734 -0.52148,-0.8671875 -0.71484,-1.5703125 -0.1875,-0.7089844 -0.28125,-1.7138672 -0.28125,-3.0117188 0,-1.0078125 -0.1582,-1.8076171 -0.46875,-2.4023437 -0.31348,-0.6005859 -0.71191,-1.0576172 -1.19531,-1.3710938 -0.47754,-0.3193359 -0.99024,-0.5332031 -1.53516,-0.6445312 -0.53906,-0.1083984 -1.03125,-0.164063 -1.47656,-0.164063 h -7.78125 l 0.29297,-0.386718 v 9.7617185 c 0,0.17285156 -0.0674,0.32519531 -0.19922,0.45703125 -0.12598,0.12597656 -0.28711,0.1875 -0.48047,0.1875 z m 0.35156,-11.29687475 h 8.22657 c 0.85839,-0.08496 1.64648,-0.339844 2.36718,-0.761719 0.72657,-0.427734 1.31836,-1.025391 1.78125,-1.792969 0.45996,-0.773437 0.69141,-1.68164 0.69141,-2.730469 0,-1.294921 -0.46582,-2.373046 -1.39453,-3.234375 -0.93164,-0.867187 -2.18555,-1.300781 -3.76172,-1.300781 h -7.74609 l 0.16406,-0.234375 v 10.40625 z m 21.57715,10.628906 c -0.0234,0.1875 -0.10254,0.34863281 -0.23437,0.48046875 -0.12598,0.12597656 -0.27539,0.1875 -0.44532,0.1875 -0.21093,0 -0.375,-0.06152344 -0.49218,-0.1875 C 247.13088,-0.31801719 247.07229,-0.47915 247.07229,-0.66665 v -21.058594 c 0,-0.193359 0.0615,-0.354492 0.1875,-0.480469 0.13183,-0.131835 0.29296,-0.199218 0.48046,-0.199218 0.19336,0 0.3545,0.06738 0.48047,0.199218 0.13184,0.125977 0.19922,0.28711 0.19922,0.480469 z m 7.04004,-21.738281 h 12.05859 c 0.16993,0 0.31934,0.06738 0.44532,0.199218 0.13183,0.125977 0.19922,0.275391 0.19922,0.445313 0,0.1875 -0.0674,0.345703 -0.19922,0.46875 -0.12598,0.117187 -0.27539,0.175781 -0.44532,0.175781 h -11.68359 l 0.32813,-0.550781 v 9.925781 l -0.38672,-0.457031 h 10.30078 c 0.16992,0 0.31933,0.06738 0.44531,0.199219 0.13184,0.125976 0.19922,0.27539 0.19922,0.445312 0,0.196289 -0.0674,0.351563 -0.19922,0.46875 -0.12598,0.117188 -0.27539,0.175781 -0.44531,0.175781 h -10.24219 l 0.32813,-0.351562 V -1.1236813 L 256.0342,-1.276025 h 11.48437 c 0.16993,0 0.31934,0.067383 0.44532,0.1992187 0.13183,0.12597661 0.19922,0.2695313 0.19922,0.4335938 0,0.19628906 -0.0674,0.3515625 -0.19922,0.46875 -0.12598,0.1171875 -0.27539,0.17578125 -0.44532,0.17578125 h -12.05859 c -0.17285,0 -0.32519,-0.06152344 -0.45703,-0.1875 -0.12598,-0.13183594 -0.1875,-0.28417969 -0.1875,-0.45703125 V -21.7604 c 0,-0.169922 0.0615,-0.319336 0.1875,-0.445313 0.13184,-0.131835 0.28418,-0.199218 0.45703,-0.199218 z m 27.38965,22.722656 c -1.66406,0 -3.19629,-0.28125 -4.59375,-0.84375 -1.40039,-0.5625 -2.61914,-1.359375 -3.65625,-2.390625 -1.03125,-1.0371094 -1.82813,-2.2617188 -2.39063,-3.6679688 -0.5625,-1.4121093 -0.84375,-2.953125 -0.84375,-4.6171872 0,-1.664063 0.28125,-3.199219 0.84375,-4.605469 0.5625,-1.40625 1.35938,-2.625 2.39063,-3.65625 1.03711,-1.037109 2.25586,-1.839844 3.65625,-2.402344 1.39746,-0.568359 2.92969,-0.855469 4.59375,-0.855469 1.17187,0 2.2998,0.146485 3.38672,0.433594 1.09277,0.290039 2.06543,0.720703 2.91797,1.289063 0.1084,0.07031 0.18164,0.152343 0.22265,0.246093 0.0469,0.09375 0.0703,0.19629 0.0703,0.304688 0,0.210937 -0.0791,0.37207 -0.23438,0.480469 -0.14941,0.111328 -0.27539,0.164062 -0.375,0.164062 -0.0879,0 -0.16406,-0.01465 -0.23437,-0.04687 -0.0645,-0.03809 -0.12598,-0.06445 -0.1875,-0.08203 -0.79102,-0.451172 -1.65235,-0.814453 -2.58985,-1.089844 -0.9375,-0.28125 -1.93066,-0.421875 -2.97656,-0.421875 -1.98633,0 -3.74414,0.445313 -5.27344,1.335938 -1.52344,0.884765 -2.71875,2.094726 -3.58594,3.632812 -0.86132,1.532227 -1.28906,3.290039 -1.28906,5.273438 0,1.9863279 0.42774,3.7499997 1.28906,5.2968747 0.86719,1.546875 2.0625,2.7597657 3.58594,3.6328125 1.5293,0.8759766 3.28711,1.31250005 5.27344,1.31250005 1.06934,0 2.12109,-0.16406255 3.15234,-0.49218755 1.03125,-0.3339843 1.93946,-0.7675781 2.73047,-1.3007812 l -0.11719,0.5742187 V -10.17055 l 0.44532,0.410156 h -6.21094 c -0.17285,0 -0.3252,-0.061523 -0.45703,-0.1875 -0.12598,-0.131836 -0.1875,-0.28418 -0.1875,-0.457031 0,-0.1875 0.0615,-0.339844 0.1875,-0.457032 0.13183,-0.117187 0.28418,-0.175781 0.45703,-0.175781 h 6.39844 c 0.19336,0 0.35156,0.06738 0.46875,0.199219 0.11718,0.125977 0.17578,0.269531 0.17578,0.433594 v 8.0390622 c 0,0.087891 -0.0234,0.1845704 -0.0703,0.2929688 -0.041,0.1025391 -0.11426,0.1962891 -0.22266,0.28125 -0.9375,0.6416016 -1.98926,1.15429687 -3.15234,1.53515625 -1.16602,0.38085937 -2.36426,0.57421875 -3.59766,0.57421875 z m 32.09766,-11.519531 c 0,1.7109372 -0.26368,3.269531 -0.78516,4.675781 -0.52441,1.40625 -1.26563,2.6220703 -2.22656,3.6445312 -0.96094,1.0253907 -2.09473,1.8134766 -3.39844,2.36718755 -1.29785,0.55371094 -2.72461,0.83203125 -4.27734,0.83203125 -1.56446,0 -2.99707,-0.27832031 -4.30079,-0.83203125 -1.29785,-0.55371095 -2.42578,-1.34179685 -3.38671,-2.36718755 -0.96094,-1.0224609 -1.70508,-2.2382812 -2.22657,-3.6445312 -0.51562,-1.40625 -0.77343,-2.9648438 -0.77343,-4.675781 0,-1.702149 0.25781,-3.257813 0.77343,-4.664063 0.52149,-1.412109 1.26563,-2.630859 2.22657,-3.65625 0.96093,-1.022461 2.08886,-1.810547 3.38671,-2.367187 1.30372,-0.553711 2.73633,-0.832032 4.30079,-0.832032 1.55273,0 2.97949,0.278321 4.27734,0.832032 1.30371,0.55664 2.4375,1.344726 3.39844,2.367187 0.96093,1.025391 1.70215,2.244141 2.22656,3.65625 0.52148,1.40625 0.78516,2.961914 0.78516,4.664063 z m -1.34766,0 c 0,-2.044922 -0.4043,-3.834961 -1.20703,-5.367188 -0.79688,-1.538086 -1.89551,-2.733398 -3.29297,-3.585937 -1.3916,-0.858399 -3.00586,-1.289063 -4.83984,-1.289063 -1.81348,0 -3.42774,0.430664 -4.83985,1.289063 -1.40625,0.852539 -2.51367,2.047851 -3.3164,3.585937 -0.79688,1.532227 -1.19532,3.322266 -1.19532,5.367188 0,2.0478513 0.39844,3.8408201 1.19532,5.378906 0.80273,1.5410156 1.91015,2.7363281 3.3164,3.5859375 1.41211,0.8525391 3.02637,1.27734375 4.83985,1.27734375 1.83398,0 3.44824,-0.42480465 4.83984,-1.27734375 1.39746,-0.8496094 2.49609,-2.0449219 3.29297,-3.5859375 0.80273,-1.5380859 1.20703,-3.3310547 1.20703,-5.378906 z m 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" aria-label="EFICIENCIA EN RIEGO" transform="matrix(1.3333333,0,0,1.3333333,3935.6811,486.51387)"></path></g><g class="lg-mark"><path id="path280" d="m 0,0 c -5.01,-7.135 -11.949,-11.263 -18.693,-15.632 -8.466,-5.484 -16.96,-10.931 -23.682,-18.637 -5.282,-6.056 -8.814,-12.899 -9.957,-20.95 -1.52,-10.698 1.304,-20.59 5.495,-30.195 2.204,-5.049 5.491,-9.702 7.148,-14.897 4.082,-12.8 10.402,-24.057 20.023,-33.542 29.082,-28.671 77.609,-28.056 106.072,1.229 22.701,23.357 24.571,55.794 7.612,84.825 -0.979,1.675 -2.159,3.232 -3.244,4.845 -0.168,-1.196 0.17,-2.069 0.564,-2.917 15.095,-32.485 5.337,-65.083 -25.81,-83.246 -21.832,-11.735 -44.527,-11.992 -67.173,-3.043 -0.176,0.07 -0.355,0.14 -0.523,0.228 -13.275,6.963 -22.907,17.116 -30.934,35.947 -7.447,17.469 -4.881,37.028 5.001,52.717 0.246,0.391 0.687,0.659 1.233,1.167 0,-0.572 0.045,-0.773 -0.007,-0.944 -0.285,-0.926 -0.577,-1.851 -0.897,-2.765 -5.246,-15.021 -3.784,-29.747 1.824,-44.336 0.935,-2.432 1.867,-2.728 4.251,-1.457 13.52,7.208 23.592,16.998 27.24,34.076 C 9.755,-37.811 6.96,-23.304 1.331,-1.775 1.326,-1.756 1.32,-1.736 1.311,-1.718 1.094,-1.239 0.653,-0.847 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,3709.1965,309.56973)" clip-path="url(#clipPath281)"></path></g><g class="lg-mark"><path id="path285" d="m 220.936,367.777 c -3.362,-3.679 -3.528,-7.007 -2.107,-11.541 v 0 c 4.628,-14.768 7.003,-28.099 5.321,-43.752 v 0 c -1.056,-9.837 -3.389,-20.552 -9.666,-28.361 v 0 c -5.913,-7.358 -13.503,-12.39 -21.977,-16.28 v 0 c -2.183,-1.003 -2.634,-2.035 -1.482,-4.168 v 0 c 5.098,-9.434 12.448,-16.596 22.01,-21.291 v 0 c 15.355,-7.538 31.413,-8.632 47.863,-4.258 v 0 c 24.267,6.451 39.789,27.294 38.545,51.903 v 0 c -0.783,15.498 -5.895,29.777 -13.056,43.371 v 0 c -9.912,18.816 -22.73,35.56 -36.952,51.288 v 0 c -2.4,2.654 -4.589,5.499 -6.904,8.23 v 0 c -7.182,-8.395 -14.147,-16.988 -21.595,-25.141" transform="matrix(1.3333333,0,0,-1.3333333,3427.56,793.70133)" style="fill:#ffffff;stroke:none"></path></g><g class="lg-mark"><path id="path286" d="M 0,0 C -5.343,3.363 -10.988,6.418 -16.379,9.415 -6.691,7.303 3.002,4.724 10.566,-3.418 10.357,3.163 4.51,12.701 -0.495,16.235 c -11.845,8.363 -29.249,2.962 -39.682,-5.034 2.185,-1.363 4.332,-2.343 6.027,-3.836 3.628,-3.195 7.024,-6.653 10.511,-10.007 8.353,-8.035 18.246,-9.489 29.118,-6.849 2.468,0.6 2.465,1.944 1.01,3.486 C 4.436,-3.828 2.48,-1.561 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1.3333333,0,0,-1.3333333,3636.7275,442.19253)" clip-path="url(#clipPath287)"></path></g></g></g></svg></div>
           <div class="jr__bottom">
-            <div>
-              <p class="jr__tag" data-split="lines" data-gate data-bd="650" data-st="110" data-d="900" aria-hidden="true"><span class="ln">Cada gota impulsa</span><span class="ln">el crecimiento</span></p>
-              <p class="jr__lead" data-iv="opacity:0,y:20" data-ivd="520" data-gate>Sistemas de riego de precisión que transforman campos en oportunidades. Desde la fuente hasta la raíz, cada componente trabaja en armonía.</p>
-              <div class="jr__ctas" data-iv="opacity:0,y:20" data-ivd="620" data-gate>
-                <a class="pill pill--light" href="#viaje" data-journey="1">Descubrí el viaje del agua <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
-                <button class="pill pill--ghost" type="button" data-open-modal>Pedir asesoramiento</button>
-              </div>
-            </div>
-            <div class="jr__cluster">
-              <div class="mini" data-iv="opacity:0,y:28" data-ivd="650" data-ivc="200,26" data-gate>
-                <div class="mini__stage" id="mini" aria-live="polite"></div>
-                <div class="dots dots--light" id="miniDots"></div>
-              </div>
-              <article class="years glass" data-iv="opacity:0,y:28" data-ivd="780" data-ivc="200,26" data-gate>
-                <div class="years__l">
-                  <p class="years__v">25+</p>
-                  <div class="years__dots" aria-hidden="true"><i style="background:#00a8e8"></i><i style="background:#2d7a3e"></i><i style="background:#0a6fc2"></i><i style="background:#fff"></i></div>
-                  <p class="years__c">Años en riego agrícola, desde Luján de Cuyo</p>
-                </div>
-                <img src="media/app-vid-thumb.webp" alt="Viñedo en Mendoza con la cordillera de fondo" loading="lazy">
-              </article>
-            </div>
+            <a class="pill pill--light" href="#viaje" data-journey="1" data-iv="opacity:0,y:20" data-ivd="620" data-gate>Descubrí el viaje del agua <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
           </div>
         </div>
       </div>
@@ -510,10 +436,10 @@ html:not(.js) .loader{display:none}
   <section class="sol" id="soluciones" aria-labelledby="sol-title">
     <h2 id="sol-title" class="sr-only">Soluciones de riego</h2>
     <div class="sol__top">
-      <div class="badge" data-iv="opacity:0,scale:.9" data-ivc="220,22"><b>Diseño<br>sin cargo</b><small>Relevamos tu campo y proyectamos el sistema</small></div>
+      
       <article class="bcard" data-iv="opacity:0,y:24" data-ivd="120" data-ivc="200,26" aria-live="polite">
         <span class="bcard__n" id="solN">01</span>
-        <div><h3 id="solName">Riego por goteo</h3><p id="solLine">Agua constante y controlada en la zona de raíces.</p><p id="solIdeal">Ideal para viñedos, montes frutales y olivos.</p></div>
+        <div><h3 id="solName">Riego por goteo</h3><p id="solLine">Agua constante y controlada en la zona de raíces.</p></div>
       </article>
     </div>
     <div class="ghost" aria-hidden="true" id="ghost">
@@ -542,28 +468,7 @@ html:not(.js) .loader{display:none}
     </ul>
   </section>
 
-  <!-- 4) Empresa -->
-  <section class="emp" id="empresa" aria-labelledby="emp-title">
-    <div class="emp__grid">
-      <div class="emp__intro">
-        <img class="emp__icon" src="media/sol-goteo.webp" alt="" loading="lazy" data-iv="opacity:0,scale:.85" data-ivc="240,20">
-        <h2 id="emp-title" class="h2" data-split="lines"><span class="ln">Insumos, diseño</span><span class="ln">e instalación</span><span class="ln">en un solo lugar</span></h2>
-        <p class="emp__body" data-split="fade" data-st="28" data-bd="250" data-d="700">Desde Luján de Cuyo combinamos la venta de insumos con el diseño y la instalación de sistemas de riego eficientes.</p>
-        <ul class="emp__vals" data-iv="opacity:0,y:20" data-ivd="300">
-          <li><b>Foco en el cliente</b>Soluciones pensadas para cada productor.</li>
-          <li><b>A medida</b>Cada sistema se diseña para su campo.</li>
-          <li><b>Sostenibilidad</b>Uso eficiente del agua.</li>
-        </ul>
-      </div>
-      <div>
-        <div class="tiles">
-          <figure class="tile tile--deep" data-iv="opacity:0,y:48" data-ivd="0" data-ivc="180,26"><img src="media/camioneta-vertical.webp" alt="Camioneta de Rolwin junto a un curso de agua, con la cordillera de fondo" loading="lazy"><figcaption><b>Rolwin en campo</b><span>Relevamos tu campo y proyectamos el sistema.</span></figcaption></figure>
-          <figure class="tile tile--green" data-iv="opacity:0,y:48" data-ivd="140" data-ivc="180,26"><img src="media/app-hilera-goteo.webp" alt="Hileras de cultivo con líneas de goteo y la cordillera de fondo" loading="lazy"><figcaption><b>Diseño a medida</b><span>Cada sistema se diseña para su campo.</span></figcaption></figure>
-        </div>
-        <p class="emp__note">La segunda foto es ilustrativa.</p>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- 5) Desde Luján de Cuyo -->
   <section class="lj" id="lujan" aria-label="Desde Luján de Cuyo, hace más de 25 años">
@@ -574,17 +479,7 @@ html:not(.js) .loader{display:none}
     </div>
   </section>
 
-  <!-- 6) Números -->
-  <section class="stats" aria-labelledby="stats-title">
-    <span class="eyebrow eyebrow--light">En números</span>
-    <h2 id="stats-title" class="h2" data-split="lines"><span class="ln">Una empresa</span><span class="ln">con oficio</span></h2>
-    <dl>
-      <div class="stat" data-iv="opacity:0,y:30" data-ivd="0" data-ivc="180,24"><dt class="sr-only">Años en riego agrícola</dt><dd><p class="stat__v">25+</p><p class="stat__l" aria-hidden="true">Años en riego agrícola</p></dd></div>
-      <div class="stat" data-iv="opacity:0,y:30" data-ivd="110" data-ivc="180,24"><dt class="sr-only">Sistemas de riego</dt><dd><p class="stat__v">6</p><p class="stat__l" aria-hidden="true">Sistemas de riego</p></dd></div>
-      <div class="stat" data-iv="opacity:0,y:30" data-ivd="220" data-ivc="180,24"><dt class="sr-only">Etapas que acompañamos en cada proyecto</dt><dd><p class="stat__v">4</p><p class="stat__l" aria-hidden="true">Etapas que acompañamos en cada proyecto</p></dd></div>
-      <div class="stat" data-iv="opacity:0,y:30" data-ivd="330" data-ivc="180,24"><dt class="sr-only">Costo del diseño del sistema</dt><dd><p class="stat__v">$0</p><p class="stat__l" aria-hidden="true">Costo del diseño del sistema</p></dd></div>
-    </dl>
-  </section>
+  
 
   <!-- 7) Preguntas -->
   <section class="faq" id="preguntas" aria-labelledby="faq-title">
@@ -593,42 +488,31 @@ html:not(.js) .loader{display:none}
     <ul class="faq__grid" id="faqGrid"></ul>
   </section>
 
-  <!-- 8) Pie -->
+  <!-- 8) Pie: centrado, con redes -->
   <footer class="ft" id="contacto">
     <div class="ft__cta">
-      <div>
-        <span class="eyebrow eyebrow--light">Hablemos</span>
-        <p class="ft__big" data-split="lines"><span class="ln">¿Planificamos</span><span class="ln">tu riego?</span></p>
-      </div>
+      <span class="eyebrow eyebrow--light">Hablemos</span>
+      <p class="ft__big" data-split="lines"><span class="ln">¿Planificamos</span><span class="ln">tu riego?</span></p>
       <div class="ft__btns" data-iv="opacity:0,y:20" data-ivd="150" data-ivc="200,24">
         <button class="pill pill--light" type="button" data-open-modal>Pedir asesoramiento <svg class="pill__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
         <a class="pill pill--ghost" href="https://wa.me/5492613388255?text=Hola%20Rolwin%2C%20quiero%20consultar%20por%20un%20sistema%20de%20riego." target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
-    <div class="ft__cols">
-      <div class="ft__brand">
-        <img src="media/rolwin-white.svg" alt="Rolwin">
-        <p class="ft__blurb">Diseño, instalación e insumos para riego agrícola en Mendoza. Eficiencia en riego desde Luján de Cuyo.</p>
-        <address>
-          <a href="mailto:contacto@rolwin.com.ar">contacto@rolwin.com.ar</a>
-          <a href="tel:+5492613388255">+54 261 338-8255</a>
-          <span>Lateral Este 1675, Luján de Cuyo, Mendoza</span>
-        </address>
-      </div>
-      <nav aria-label="Soluciones"><h3>Soluciones</h3><ul id="ftSol"></ul></nav>
-      <nav aria-label="Empresa"><h3>Rolwin</h3><ul>
-        <li><a href="#servicios" data-scroll>Cómo trabajamos</a></li>
-        <li><a href="#empresa" data-scroll>Empresa</a></li>
-        <li><a href="#preguntas" data-scroll>Preguntas frecuentes</a></li>
-        <li><button type="button" data-open-modal>Pedir asesoramiento</button></li>
-      </ul></nav>
-      <nav aria-label="Redes"><h3>Redes</h3><ul>
-        <li><a href="https://www.instagram.com/rolwin.argentina/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.facebook.com/RolwinMendoza/" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/company/rolwin-sas/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.tiktok.com/@rolwin.riegos" target="_blank" rel="noopener">TikTok</a></li>
-        <li><a href="https://www.youtube.com/channel/UC-fbegUVOZahf5QmsXbLPsQ" target="_blank" rel="noopener">YouTube</a></li>
-      </ul></nav>
+    <div class="ft__mid">
+      <img class="ft__logo" src="media/rolwin-white.svg" alt="Rolwin">
+      <p class="ft__blurb">Diseño, instalación e insumos para riego agrícola en Mendoza.</p>
+      <nav class="ft__nav" aria-label="Pie de página">
+        <a href="#soluciones" data-scroll>Soluciones</a>
+        <a href="#servicios" data-scroll>Cómo trabajamos</a>
+        <a href="#lujan" data-scroll>Luján de Cuyo</a>
+        <a href="#preguntas" data-scroll>Preguntas</a>
+      </nav>
+      <ul class="ft__socs" aria-label="Redes de Rolwin" data-iv="opacity:0,y:16" data-ivd="100" data-ivc="200,24"><li><a class="ft__soc" href="https://www.instagram.com/rolwin.argentina/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://www.facebook.com/RolwinMendoza/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5H16V5h-2.2C11.6 5 10.5 6.4 10.5 8.6V11H8.5v3.3h2V21h3.3v-6.7h2.3l.4-3.3h-2.7V9.3c0-.5.3-.8.7-.8z"/></svg></a></li><li><a class="ft__soc" href="https://www.linkedin.com/company/rolwin-sas/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5v6M8 7.6v.1M11.5 16.5v-6M11.5 13c0-1.6 1-2.6 2.3-2.6s2.2.9 2.2 2.6v3.5"/></svg></a></li><li><a class="ft__soc" href="https://www.tiktok.com/@rolwin.riegos" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.4 2 4 4.5 4.3"/></svg></a></li><li><a class="ft__soc" href="https://www.youtube.com/channel/UC-fbegUVOZahf5QmsXbLPsQ" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.3 9.4l4.4 2.6-4.4 2.6z" fill="currentColor"/></svg></a></li><li><a class="ft__soc" href="https://wa.me/5492613388255" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.3 18.4z"/><path d="M9.2 8.6c.2-.4.6-.4.8 0l.6 1.4c.1.3 0 .5-.2.7l-.4.4c.5 1 1.3 1.8 2.3 2.3l.4-.4c.2-.2.5-.3.7-.2l1.4.6c.4.2.4.6 0 .8-.6.5-1.4.8-2.2.5a7.2 7.2 0 0 1-3.9-3.9c-.3-.8 0-1.6.5-2.2z"/></svg></a></li></ul>
+      <address class="ft__addr">
+        <a href="mailto:contacto@rolwin.com.ar">contacto@rolwin.com.ar</a>
+        <a href="tel:+5492613388255">+54 261 338-8255</a>
+        <span>Lateral Este 1675, Luján de Cuyo, Mendoza</span>
+      </address>
     </div>
     <div class="ft__bar">
       <span>© 2026 Rolwin S.A.S. Todos los derechos reservados.</span>
@@ -655,7 +539,6 @@ html:not(.js) .loader{display:none}
       <nav class="menu__nav" aria-label="Menú principal">
         <a href="#soluciones" data-scroll>Soluciones</a>
         <a href="#servicios" data-scroll>Cómo trabajamos</a>
-        <a href="#empresa" data-scroll>Empresa</a>
         <a href="#preguntas" data-scroll>Preguntas</a>
         <a href="#contacto" data-scroll>Contacto</a>
       </nav>
@@ -738,7 +621,6 @@ const ARROW = '<svg class="pill__arrow" viewBox="0 0 24 24" fill="none" stroke="
 
 /* ---------- Contenido armado desde los datos ---------- */
 $('#faqGrid').innerHTML = FAQS.map(([q, a], i) => `<li data-iv="opacity:0,y:40" data-ivd="${(i % 3) * 120}" data-ivc="180,26" data-hover="self|y:0:-8|300,22"><article class="fq"><span class="fq__g" aria-hidden="true">?</span><h3>${q}</h3><p>${a}</p></article></li>`).join('');
-$('#ftSol').innerHTML = SOLS.map((s, i) => `<li><a href="#soluciones" data-sol="${i}">${s.name}</a></li>`).join('');
 $('#fTema').innerHTML = ['Todavía no sé', ...SOLS.map((s) => s.name), 'Insumos y repuestos', 'Instalación llave en mano', 'Servicio técnico'].map((t) => `<option>${t}</option>`).join('');
 
 /* ---------- Resortes (modelo tensión/fricción) ---------- */
@@ -810,7 +692,7 @@ $$('[data-iv]').forEach((el) => {
   const delay = +(el.dataset.ivd || 0);
   applyProps(el, from, 0);
   const sp = new Spring(0, cfg);
-  inview(el, () => reveal(el, () => setTimeout(() => sp.to(1, (s) => { applyProps(el, from, s); if (s === 1) { el.style.transform = ''; el.style.opacity = ''; } }), reduce ? 0 : delay)), '0px 0px -8% 0px');
+  inview(el, () => reveal(el, () => setTimeout(() => sp.to(1, (s) => { applyProps(el, from, s); if (s === 1) { el.style.transform = ''; el.style.opacity = ''; } }), reduce ? 0 : delay)), el.hasAttribute('data-gate') ? '0px' : '0px 0px -8% 0px');
 });
 // Hover con resorte (sólo con mouse y pantallas grandes)
 function hoverSpring(host, sel, props, cfg) {
@@ -837,7 +719,6 @@ function hoverSpring(host, sel, props, cfg) {
 $$('.work__row').forEach((r) => hoverSpring(r, '.work__arrow svg', 'x:0:8;opacity:.55:1', [300, 20]));
 $$('.pill').forEach((p) => { if ($('.pill__arrow', p)) hoverSpring(p, '.pill__arrow', 'x:0:5', [320, 20]); });
 $$('.abtn').forEach((b) => { const s = $('svg', b); if (b.classList.contains('abtn--prev')) s.dataset.base = 'scaleX(-1)'; hoverSpring(b, 'svg', 'scale:1:1.15', [320, 18]); });
-$$('.tile').forEach((t) => hoverSpring(t, 'img', 'scale:1:1.03', [300, 22]));
 $$('.xbtn').forEach((b) => hoverSpring(b, 'svg', 'rotate:0:90', [300, 18]));
 $$('[data-hover]').forEach((li) => { const [sel, props, cfg] = li.dataset.hover.split('|'); hoverSpring(li, sel === 'self' ? '.fq' : sel, props.replace(/\|/g, ''), cfg.split(',').map(Number)); });
 
@@ -855,30 +736,6 @@ frameHooks.push(() => {
   return false;
 });
 
-/* ---------- Carrusel chico del inicio (3 soluciones) ---------- */
-const MINI = [0, 2, 5];
-const mini = $('#mini'), miniDots = $('#miniDots');
-let miniI = 0, miniTimer = 0;
-function miniCard(i) {
-  const s = SOLS[MINI[i]];
-  const d = document.createElement('div');
-  d.className = 'mini__card glass';
-  d.innerHTML = `<img src="${s.img}" alt="${s.alt}"><div><p class="mini__brand">Soluciones</p><p class="mini__title">${s.name}</p><a class="mini__cta" href="#soluciones" data-sol="${MINI[i]}">Ver solución →</a></div>`;
-  return d;
-}
-function miniGo(i) {
-  const old = mini.firstElementChild;
-  const card = miniCard(i); mini.appendChild(card);
-  const sIn = new Spring(0, [210, 24]);
-  applyProps(card, { opacity: 0, y: 16, scale: 0.96 }, 0);
-  sIn.to(1, (s) => applyProps(card, { opacity: 0, y: 16, scale: 0.96 }, s));
-  if (old) { const sOut = new Spring(0, [210, 24]); sOut.to(1, (s) => { applyProps(old, { opacity: 1, y: 0, scale: 1 }, 1 - s); old.style.opacity = (1 - s).toFixed(3); if (s >= 0.999) old.remove(); }); }
-  miniI = i;
-  miniDots.innerHTML = MINI.map((_, k) => `<button type="button" aria-label="Solución ${k + 1}" aria-current="${k === i}"><i></i></button>`).join('');
-}
-miniDots.addEventListener('click', (e) => { const b = e.target.closest('button'); if (!b) return; miniGo([...miniDots.children].indexOf(b)); startMini(); });
-function startMini() { clearInterval(miniTimer); if (!reduce) miniTimer = setInterval(() => { if (window.heroVisible !== false && !document.hidden) miniGo((miniI + 1) % MINI.length); }, 3800); }
-miniGo(0);
 
 /* ---------- Soluciones: carrusel con palabras gigantes ---------- */
 let solI = 0;
@@ -893,7 +750,16 @@ function setGhost(words, animate) {
 }
 const stack = $('#solStack'), bcardTxt = $('.bcard > div');
 const cardT = (el, x, r, o) => { el.style.transform = `translateX(${x.toFixed(2)}%) rotate(${r.toFixed(2)}deg)`; el.style.opacity = Math.max(0, Math.min(1, o)).toFixed(3); };
-function solCard(s) { const d = document.createElement('div'); d.className = 'coach__card'; d.innerHTML = `<div class="coach__fig"><img src="${s.img}" alt="${s.alt}"></div><div class="coach__cap"><b>${s.name}</b><span>Imagen ilustrativa</span></div>`; return d; }
+function solCard(s) {
+  const d = document.createElement('div'); d.className = 'coach__card';
+  d.innerHTML = `<article class="c3d">
+    <h3 class="c3d__i c3d__t" data-z="50">${s.name}</h3>
+    <p class="c3d__i c3d__d" data-z="60">${s.ideal}</p>
+    <div class="c3d__i c3d__img" data-z="100"><img src="${s.img}" alt="${s.alt}"></div>
+    <div class="c3d__row"><span class="c3d__i c3d__note" data-z="20">Imagen ilustrativa</span><button class="c3d__i c3d__btn" type="button" data-z="20" data-ask>Consultar</button></div>
+  </article>`;
+  return d;
+}
 // Cambio de tarjeta: la actual sale volando hacia un costado y la nueva entra desde el otro
 function solGo(i, animate = true, dir = 1) {
   solI = (i + SOLS.length) % SOLS.length;
@@ -901,7 +767,7 @@ function solGo(i, animate = true, dir = 1) {
   setGhost(s.words, animate);
   $('#solN').textContent = String(solI + 1).padStart(2, '0');
   $('#solName').textContent = s.name;
-  $('#solLine').textContent = s.line; $('#solIdeal').textContent = s.ideal;
+  $('#solLine').textContent = s.line;
   const old = stack.lastElementChild, nc = solCard(s);
   stack.appendChild(nc);
   if (!animate || reduce || !old) { if (old) old.remove(); cardT(nc, 0, 0, 1); }
@@ -916,6 +782,21 @@ function solGo(i, animate = true, dir = 1) {
   $('#solDots').innerHTML = SOLS.map((x, k) => `<button type="button" aria-label="${x.name}" aria-current="${k === solI}"><i></i></button>`).join('');
 }
 solGo(0, false);
+(() => {
+  const box = $('.coach'), tilt = $('#solStack');
+  if (reduce || !matchMedia('(hover:hover)').matches) return;
+  const items = () => $$('.c3d__i', stack.lastElementChild || stack);
+  box.addEventListener('mouseenter', () => { box.classList.add('is-3d'); items().forEach((el) => { el.style.transform = `translateZ(${el.dataset.z}px)`; }); });
+  box.addEventListener('mousemove', (e) => {
+    const r = tilt.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width / 2) / 25, y = (e.clientY - r.top - r.height / 2) / 25;
+    tilt.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+  });
+  box.addEventListener('mouseleave', () => { box.classList.remove('is-3d'); tilt.style.transform = 'rotateY(0deg) rotateX(0deg)'; $$('.c3d__i', stack).forEach((el) => { el.style.transform = ''; }); });
+  // a card that arrives while the pointer is over the deck also floats
+  new MutationObserver(() => { if (box.classList.contains('is-3d')) requestAnimationFrame(() => items().forEach((el) => { el.style.transform = `translateZ(${el.dataset.z}px)`; })); }).observe(stack, { childList: true });
+})();
+stack.addEventListener('click', (e) => { if (e.target.closest('[data-ask]')) openModal(SOLS[solI].name); });
 inview($('#ghost'), () => gws.forEach((g) => g.classList.add('is-in')));
 $('#solPrev').addEventListener('click', () => solGo(solI - 1, true, -1));
 $('#solNext').addEventListener('click', () => solGo(solI + 1, true, 1));
@@ -1197,7 +1078,7 @@ const noteOp = (sh, hi, i, p) => smooth((p - sh[0] - i * 0.009) / (sh[1] - sh[0]
   const go = () => {
     if (started) return; started = true;
     setTimeout(() => {
-      ready = true; gated.splice(0).forEach((f) => f()); startMini(); $('#heroLogo').classList.add('is-in');
+      ready = true; gated.splice(0).forEach((f) => f()); $('#heroLogo').classList.add('is-in');
       lock(false); L.classList.add('is-out');
       setTimeout(() => L.remove(), EXIT + 50);
     }, MIN);
